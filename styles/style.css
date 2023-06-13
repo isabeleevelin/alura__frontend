@@ -143,12 +143,15 @@ body {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    border: 1px solid #000000;
+    /* border: 1px solid #000000; */
+    filter: drop-shadow(0 0 0.75rem #000000);
 }
 
 .curriculo {
     display: flex;
     height: auto;
+    justify-content: center;
+    border-radius: 100px;
 }
 
 .curriculo__redes__paragrafo {
@@ -285,6 +288,24 @@ body {
     text-align: justify;
 }
 
+.curriculo__profissional__habilidades{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: #272727;
+    font-family: 'Assistant', sans-serif;
+    font-weight: 100;
+    font-size: 14px;
+    overflow: visible;
+    max-height: 300px;
+
+    padding: 2%;
+}
+
+.habilidades{
+    padding: 2% 5%;
+}
+
 .curriculo__profissional__experiencias {
     font-family: 'Assistant', sans-serif;
     font-weight: 100;
@@ -294,4 +315,26 @@ body {
     gap: 15px;
     display: flex;
     flex-direction: column;
+}
+
+.sobre_mim{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 8% 12% 0 ;
+    gap: 100px;
+}
+
+#sobre_mim_imagem{
+    width: 300px;
+    height: 300px;
+    padding-top: 50px;
+}
+
+.sobre_mim__conteudo{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 615px;
+    padding-bottom: 20%;
 }
