@@ -1,3 +1,10 @@
+:root{
+    --black: #025464;
+    --secundaria:#E57C23;
+    --tercearia: #E8AA42;
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -5,13 +12,13 @@
 
 body {
     /* height: 100vh; pagina inteira */
-    background-color: #000000;
-    color: #f6f6f6;
+    background-color: var(--black);
+    color: var(--secundaria);
     box-sizing: border-box;
 }
 
 .titulo-destaque {
-    color: #22d4fd;
+    color: var(--tercearia);
 }
 
 .apresentacao {
@@ -55,7 +62,7 @@ body {
     border-radius: 8px;
     font-size: 24px;
     padding: 10.5px 0;
-    color: #f6f6f6;
+    color: var(--secundaria);
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     text-decoration: none;
@@ -67,16 +74,16 @@ body {
 }
 
 .apresentacao__links__link:hover {
-    background: #272727;
+    background: #ffd489af;
 }
 
 .apresentacao__conteudo__texto_nome:hover {
-    color: #22D4FD
+    color: var(--tercearia)
 }
 
 .rodape {
-    color: #000000;
-    background-color: #22D4FD;
+    color: var(--black);
+    background-color: var(--tercearia);
     padding: 24px;
     text-align: center;
     font-family: 'Montserrat', sans-serif;
@@ -99,7 +106,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 24px;
-    color: #22D4FD;
+    color: var(--tercearia);
     text-decoration: none;
 }
 
@@ -110,7 +117,7 @@ body {
 
 .curriculo__informacoes {
     width: 300px;
-    background-color: rgb(174, 177, 177);
+    background-color: #F8F1F1;
     padding: 20px;
     display: flex;
     justify-content: center;
@@ -126,7 +133,7 @@ body {
 }
 
 .curriculo__informacoes__subtitulo {
-    color: #272727;
+    color: var(--black);
     font-size: 16px;
     font-weight: 600;
 
@@ -134,7 +141,7 @@ body {
 }
 
 .divider {
-    border-color: #000000;
+    border-color: var(--black);
     box-sizing: border-box;
     width: 100%;
 }
@@ -144,7 +151,7 @@ body {
     height: 150px;
     border-radius: 50%;
     /* border: 1px solid #000000; */
-    filter: drop-shadow(0 0 0.75rem #000000);
+    filter: drop-shadow(0 0 0.75rem --black);
 }
 
 .curriculo {
@@ -164,7 +171,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
-    color: #272727;
+    color: var(--secundaria);
     text-align: justify;
     justify-content: center;
     align-items: center;
@@ -175,7 +182,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
-    color: #272727;
+    color: var(--secundaria);
     text-align: center;
     justify-content: center;
     /* align-items: center; */
@@ -186,7 +193,7 @@ body {
     display: flex;
     flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
-    color: #272727;
+    color: var(--secundaria);
     text-align: center;
     gap: 20px;
 }
@@ -197,7 +204,7 @@ body {
 }
 
 .curriculo__profissional {
-    background-color: #f6f6f6;
+    background-color: var(--tercearia);
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -211,18 +218,18 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 16px;
     font-weight: 600;
-    color: #272727;
+    color: var(--black);
     padding: 2%;
 }
 
 .curriculo__profissional__header__subtitulo {
-    color: #22D4FD;
+    color: var(--black);
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 100;
 }
 
 .curriculo__profissional__educacao {
-    color: #272727;
+    color: var(--black);
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 100;
     font-size: 16px;
@@ -233,9 +240,9 @@ body {
 }
 
 .curriculo__profissional__competencias {
-    color: #272727;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 100;
+    color: var(--black);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
     font-size: 16px;
     padding: 2%;
     gap: 10px;
@@ -247,34 +254,34 @@ body {
 .competencias {
     width: 200px;
     height: 20px;
-    background-color: #272727;
+    background-color: var(--black);
     margin-right: 10px;
 }
 
 .competencia__angular {
     width: 100px;
     height: inherit;
-    background-color: #22D4FD;
+    background-color: var(--secundaria);
 }
 
 .competencia__java {
     width: 85px;
     height: inherit;
-    background-color: #22D4FD;
+    background-color: var(--secundaria);
 }
 
 .competencia__node {
     width: 60px;
     height: inherit;
-    background-color: #22D4FD;
+    background-color: var(--secundaria);
 }
 
 .experiencias {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    color: #272727;
-    font-family: 'Assistant', sans-serif;
+    color: var(--black);
+    font-family: 'Krona One', sans-serif;
     font-weight: 100;
     font-size: 14px;
     overflow: visible;
@@ -292,7 +299,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 15px;
-    color: #272727;
+    color: var(--black);
     font-family: 'Assistant', sans-serif;
     font-weight: 100;
     font-size: 14px;
@@ -310,7 +317,7 @@ body {
     font-family: 'Assistant', sans-serif;
     font-weight: 100;
     font-size: 16px;
-    color: #272727;
+    color: var(--black);
     padding: 2%;
     gap: 15px;
     display: flex;
